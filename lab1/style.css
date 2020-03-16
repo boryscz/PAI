@@ -1,0 +1,68 @@
+*   { 
+    font-family: Tahoma;
+}
+
+body{
+    background-image: url(brutal.jpg);
+    background-repeat: repeat-y;
+}
+
+li{ 
+    list-style-type: square;
+}
+
+span{
+    color: red;
+    font-weight: bold;
+}
+
+p.wstep{
+    font-style: italic;
+}
+
+td>img{
+    border-style: solid;
+    border-color: blue;
+}
+
+td>img:hover{
+    border-style: solid;
+    border-color: red;    
+}
+
+h2{
+    letter-spacing: 5px;
+}
+
+/*td[colspan=2]{
+    font-size: small;
+}*/
+
+td.opis{
+    column-span: 2;
+    font-size: small;
+}
+
+p+p{
+    color: grey;
+}
+
+body{ 
+    margin: 5em10em5em10em
+} 
+
+p   { 
+    text-align: justify
+}
+
+h1  { 
+    color: yellow
+}
+
+h1{
+    color: blue;
+}
+
+h1{
+    color: green;
+}
