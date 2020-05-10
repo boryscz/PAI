@@ -1,0 +1,26 @@
+﻿@{
+    Layout = null;
+    var rules = (List<string>)Session["Rules"];
+    if (rules == null)
+    {
+        rules = new List<string>();
+    }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <ol>
+        @foreach (var rule in rules)
+        {
+            <li>@rule</li>
+        }
+    </ol>
+    <a href="~/Rules_POST.cshtml">Add new rule</a>
+</body>
+</html>
