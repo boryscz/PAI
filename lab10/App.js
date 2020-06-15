@@ -33,24 +33,20 @@ class App extends React.Component {
     }
 
     handleOnCheck(index) {
-        this.setState((prevState) => {prevState.tasks[index].checked = true
+        this.setState((prevState) => {prevState.todos[index].checked = true
         return prevState
         })
     }
 
     handleOnUncheck(index) {
-        this.setState((prevState) => {prevState.tasks[index].checked = false
+        this.setState((prevState) => {prevState.todos[index].checked = false
         return prevState
         })
     }
 
     handleOnSubmit(value) {
-        this.setState({tasks: this.state.tasks.concat([{name: value, checked: false }])})
+        this.setState({todos: this.state.todos.concat([{name: value, checked: false }])})
     }
-
-
-
-
 
     render() { 
         return (
